@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# SHH connection
+
+if [ $# != 2 ]
+then
+    echo "USAGE: ./ssh_conn SSH-KEY-PATH SSH_ALIAS "
+else
+    ssh -i "$1" "$2"
+fi

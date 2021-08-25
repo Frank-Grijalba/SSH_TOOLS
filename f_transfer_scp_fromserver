@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# File download SCP from server
+
+if [ $# != 3 ]
+then
+    echo "USAGE: ./f_transfer_scp_fromserver SSH_ALIAS FILE_FOLDER_ON_SERVER LOCAL_FOLDER_TO_SAVE "
+else
+    scp "$1":"$2" "$3"
+fi
+

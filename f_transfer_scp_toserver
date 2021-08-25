@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# File transfer SCP
+
+if [ $# != 3 ]
+then
+    echo "USAGE: ./f_transfer_scp_toserver SSH_KEY_PATH LOCAL_FILE SSH_ALIAS"
+else
+    scp -o StrictHostKeyChecking=no -i "$1" "$2" "$3":~/
+fi

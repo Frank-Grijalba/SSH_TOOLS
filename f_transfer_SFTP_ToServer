@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# File transfer SFTP
+
+if [ $# != 3 ]
+then
+    echo "USAGE: ./file_transfer_sftp SSH_KEY_PATH SSH_ALIAS"
+else
+    sftp -o StrictHostKeyChecking=no -i "$1" "$2"
+fi

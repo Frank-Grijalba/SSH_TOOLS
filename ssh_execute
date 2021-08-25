@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# for execute commands in the server from my local user
+
+if [ $# != 2 ]
+then
+    echo "USAGE: ./ssh_execute SSH_ALIAS COMMAND_TO_EXECUTE"
+else
+    ssh -t "$1" "$2"
+fi
