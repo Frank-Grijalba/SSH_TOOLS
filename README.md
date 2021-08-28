@@ -21,11 +21,11 @@ File | Description | Usage
 ------- | ------ | ------
 setup_alias_ssh | Configure the Alias of the server in the local machine |  `./setup_alias_ssh ALIAS USER IP SSH_KEY_PATH`
 f_transfer_scp_fromserver | This file use the SCP command to transfer a file from the server to the local machine | `./f_transfer_scp_fromserver SSH_ALIAS FILE_FOLDER_FROM_SERVER LOCAL_FOLDER_TO_SAVE`
-f_transfer_scp_TOserver | This file use the SCP command to transfer a file to the server from the local machine | `./f_transfer_scp_toserver SSH_KEY_PATH LOCAL_FILE SSH_ALIAS`
+f_transfer_scp_toserver | This file use the SCP command to transfer a file to the server from the local machine | `./f_transfer_scp_toserver SSH_KEY_PATH LOCAL_FILE SSH_ALIAS`
 f_transfer_SFTP_TOserver | This file use the SFTP command to transfer a file to the server from the local machine | `./f_transfer_SFTP_ToServer SSH_KEY_PATH SSH_ALIAS`
 file_transfer_rsync | This file use the RSYNC command to transfer a file to the server from the local machine without interruptions | `./file_transfer_rsync LOCAL_FILE SSH_ALIAS`
 ssh_conn | Use this file to connect to the server | `./ssh_conn SSH-KEY-PATH SSH_ALIAS`
-ssh_execute | Use this file to execute commands from the server | `./ssh_execute SSH_ALIAS COMMAND_TO_EXECUTE`
+ssh_execute | Use this file to execute commands from the server, the command will be in quotes | `./ssh_execute SSH_ALIAS "COMMAND_TO_EXECUTE"`
 
 ### Other tool
 File | Description | Usage
